@@ -14,11 +14,11 @@
     <h1>Manage Foods</h1>
     <div id="create-form">
       <label id="name-field">Name
-        <input>
+        <input value="sample name">
         <div class="validation-error"></div>
       </label>
       <label id="calories-field">Calories
-        <input>
+        <input value="1010">
         <div class="validation-error"></div>
       </label>
       <button id="add-food">Add Food</button>
@@ -32,13 +32,12 @@
       <thead>
         <tr><th>Name</th><th>Calories</th></tr>
       </thead>
-      <tbody>
-        <!-- SAMPLE ROW INSPIRATION FOR YOUR DOM MANIPULATION
+      <tbody id="food-items">
         <tr class="food-row">
           <td class="food-name">Banana</td>
-          <td class="food-calories">35</td>
+          <td class="food-calories">100</td>
           <td class="food-delete"><button>-</button></td>
-        </tr> -->
+        </tr>
       </tbody>
     </table>
   </div>
