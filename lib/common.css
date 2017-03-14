@@ -43,9 +43,21 @@ input {
   height: 2em;
 }
 
+caption {
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
 .validation-error {
   color:red;
   text-align:right;
   font-weight:normal;
   margin-top:6px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
 }
