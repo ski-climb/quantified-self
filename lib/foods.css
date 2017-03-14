@@ -32,3 +32,26 @@ td.food-delete {
 #create-form {
   text-align:right;
 }
+
+.meal-list {
+  margin: 10px;
+  width: 328px;
+}
+
+.total-calories-row {
+  background-color:lightgrey;
+  font-weight: bold;
+}
+
+.total-calories {
+  text-align: right;
+}
+
+.remaining-calories-row {
+  background-color:lightgrey;
+  font-weight: bold;
+}
+
+.remaining-calories {
+  text-align: right;
+}
