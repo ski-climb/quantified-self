@@ -38,6 +38,10 @@ td.food-delete {
   width: 328px;
 }
 
+.meal-list th {
+  text-align: left;
+}
+
 .total-calories-row {
   background-color:lightgrey;
   font-weight: bold;
