@@ -4,11 +4,12 @@
     src="https://code.jquery.com/jquery-3.1.1.js"
     integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
     crossorigin="anonymous"></script>
-  <script src="./lib/foods.js"></script>
-  <script src="./lib/common.js"></script>
   <script src="./node_modules/underscore/underscore.js"></script>
   <script src="./lib/moment.min.js"></script>
   <script src="https://use.fontawesome.com/7598d071d9.js"></script>
+  <script src="./lib/foods.js"></script>
+  <script src="./lib/common.js"></script>
+  <script src="./lib/diary.js"></script>
   <link type="text/css" rel="stylesheet" href="./lib/foods.css" >
   <link type="text/css" rel="stylesheet" href="./lib/common.css" >
 </head>
@@ -35,7 +36,7 @@
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
-        <tbody id="food-items">
+        <tbody id="breakfast-items">
           <tr class="food-row">
             <td class="food-name">Banana</td>
             <td class="food-calories">100</td>
@@ -56,12 +57,12 @@
           </tr>
         </tbody>
       </table>
-      <table class="meal-list">
+      <table class="meal-list lunch">
         <caption>Lunch</caption>
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
-        <tbody id="food-items">
+        <tbody id="lunch-items">
           <tr class="food-row">
             <td class="food-name">Carrot</td>
             <td class="food-calories">10</td>
@@ -84,12 +85,12 @@
       </table>
     </div>
     <div class="flex-container">
-      <table class="meal-list">
+      <table class="meal-list dinner">
         <caption>Dinner</caption>
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
-        <tbody id="food-items">
+        <tbody id="dinner-items">
           <tr class="food-row">
             <td class="food-name">Banana</td>
             <td class="food-calories">100</td>
@@ -105,12 +106,12 @@
           </tr>
         </tbody>
       </table>
-      <table class="meal-list">
+      <table class="meal-list snacks">
         <caption>Snacks</caption>
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
         </thead>
-        <tbody id="food-items">
+        <tbody id="snack-items">
           <tr class="food-row">
             <td class="food-name">Banana</td>
             <td class="food-calories">100</td>
@@ -172,13 +173,8 @@
       <thead>
         <tr><th></th><th>Name</th><th>Calories</th></tr>
       </thead>
-      <tbody id="food-items">
+      <tbody id="diary-food-items">
         <tr class="food-row">
-          <td>
-            <input type="checkbox">
-          </td>
-          <td class="food-name">Banana</td>
-          <td class="food-calories">100</td>
         </tr>
       </tbody>
     </table>
