@@ -61,3 +61,50 @@ caption {
   display: flex;
   justify-content: space-around;
 }
+
+.date {
+  background-color: #2d9cdb;
+  color: #fff;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  flex-grow: 3;
+  display: inline-block;
+  line-height: 30px;
+}
+
+#date-display {
+  vertical-align: middle;
+}
+
+#nav-left {
+  background-color: #2d9cdb;
+  color: #fff;
+  height: 30px;
+  width: 15px;
+  text-align: center;
+  margin-right: 3px;
+  flex-grow: 1;
+  border-bottom-left-radius: 90px;
+  border-top-left-radius: 90px;
+}
+
+#nav-right {
+  background-color: #2d9cdb;
+  color: #fff;
+  height: 30px;
+  width: 15px;
+  text-align: center;
+  margin-left: 3px;
+  flex-grow: 1;
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+.fa-caret-right {
+  line-height: 30px
+}
+
+.fa-caret-left {
+  line-height: 30px
+}
