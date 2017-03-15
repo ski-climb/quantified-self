@@ -145,7 +145,42 @@
           </tr>
         </tbody>
       </table>
-    </div>
 
   </div>
+    <h1>Foods</h1>
+    <button id="add-food">Create New</button>
+
+    <h3>Add Selected To</h3>
+    <div class="meal-buttons">
+      <div class="flex-container">
+        <button id="add-food">Breakfast</button>
+        <button id="add-food">Lunch</button>
+      </div>
+      <div class="flex-container">
+        <button id="add-food">Dinner</button>
+        <button id="add-food">Snacks</button>
+      </div>
+    </div>
+
+    <div id="food-filter">
+      <label>Search by Name
+        <input>
+      </label>
+    </div>
+
+    <table class="meal-list">
+      <thead>
+        <tr><th></th><th>Name</th><th>Calories</th></tr>
+      </thead>
+      <tbody id="food-items">
+        <tr class="food-row">
+          <td>
+            <input type="checkbox">
+          </td>
+          <td class="food-name">Banana</td>
+          <td class="food-calories">100</td>
+        </tr>
+      </tbody>
+    </table>
+
 </body>
