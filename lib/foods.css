@@ -60,6 +60,11 @@ td.food-delete {
   text-align: right;
 }
 
+.meal-totals {
+  background-color:lightgrey;
+  font-weight: bold;
+  text-align: right;
+
 .hidden {
   display: none;
 }

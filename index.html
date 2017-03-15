@@ -30,7 +30,7 @@
       </a>
     </div>
     <div class="flex-container">
-      <table class="meal-list">
+      <table class="meal-list breakfast">
         <caption>Breakfast</caption>
         <thead>
           <tr><th>Name</th><th>Calories</th></tr>
@@ -41,9 +41,14 @@
             <td class="food-calories">100</td>
             <td class="food-delete"><button>-</button></td>
           </tr>
+          <tr class="food-row">
+            <td class="food-name">Apple</td>
+            <td class="food-calories">50</td>
+            <td class="food-delete"><button>-</button></td>
+          </tr>
           <tr class="total-calories-row">
             <td class="total-calories">Total Calories</td>
-            <td class="remaining-calories-calc">0</td>
+            <td class="total-calories-calc">0</td>
           </tr>
           <tr class="remaining-calories-row">
             <td class="remaining-calories">Remaining Calories</td>
@@ -58,13 +63,18 @@
         </thead>
         <tbody id="food-items">
           <tr class="food-row">
-            <td class="food-name">Banana</td>
-            <td class="food-calories">100</td>
+            <td class="food-name">Carrot</td>
+            <td class="food-calories">10</td>
+            <td class="food-delete"><button>-</button></td>
+          </tr>
+          <tr class="food-row">
+            <td class="food-name">Lettuce</td>
+            <td class="food-calories">5</td>
             <td class="food-delete"><button>-</button></td>
           </tr>
           <tr class="total-calories-row">
             <td class="total-calories">Total Calories</td>
-            <td class="remaining-calories-calc">0</td>
+            <td class="total-calories-calc">0</td>
           </tr>
           <tr class="remaining-calories-row">
             <td class="remaining-calories">Remaining Calories</td>
@@ -87,7 +97,7 @@
           </tr>
           <tr class="total-calories-row">
             <td class="total-calories">Total Calories</td>
-            <td class="remaining-calories-calc">0</td>
+            <td class="total-calories-calc">0</td>
           </tr>
           <tr class="remaining-calories-row">
             <td class="remaining-calories">Remaining Calories</td>
@@ -108,7 +118,26 @@
           </tr>
           <tr class="total-calories-row">
             <td class="total-calories">Total Calories</td>
-            <td class="remaining-calories-calc">0</td>
+            <td class="total-calories-calc">0</td>
+          </tr>
+          <tr class="remaining-calories-row">
+            <td class="remaining-calories">Remaining Calories</td>
+            <td class="remaining-calories-calc">2000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex-container">
+      <table class="meal-totals">
+        <caption>Totals</caption>
+        <tbody id="calorie-calculations">
+          <tr class="goal-calories-row">
+            <td class="goal-calories">Goal Calories</td>
+            <td class="goal-calories-calc">0</td>
+          </tr>
+          <tr class="calories-consumed-row">
+            <td class="calories-consumed">Calories Consumed</td>
+            <td class="calories-consumed-calc">0</td>
           </tr>
           <tr class="remaining-calories-row">
             <td class="remaining-calories">Remaining Calories</td>
