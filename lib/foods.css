@@ -59,3 +59,7 @@ td.food-delete {
 .remaining-calories {
   text-align: right;
 }
+
+.hidden {
+  display: none;
+}
