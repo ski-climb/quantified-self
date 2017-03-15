@@ -59,3 +59,9 @@ td.food-delete {
 .remaining-calories {
   text-align: right;
 }
+
+.meal-totals {
+  background-color:lightgrey;
+  font-weight: bold;
+  text-align: right;
+}
