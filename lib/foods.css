@@ -69,3 +69,7 @@ td.food-delete {
 .hidden {
   display: none;
 }
+
+.meal-buttons {
+  width: 30%;
+}
