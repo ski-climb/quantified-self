@@ -64,4 +64,7 @@ td.food-delete {
   background-color:lightgrey;
   font-weight: bold;
   text-align: right;
+
+.hidden {
+  display: none;
 }
