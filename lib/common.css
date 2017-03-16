@@ -108,3 +108,11 @@ caption {
 .fa-caret-left {
   line-height: 30px
 }
+
+.too-thin {
+  color: green;
+}
+
+.well-fed {
+  color: red;
+}
