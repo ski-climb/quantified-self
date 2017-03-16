@@ -54,7 +54,9 @@ describe('index', function() {
     xit('displays remaining breakfast calories in red if less than zero', function() {
     });
 
-    xit('displays a totals table', function() {
+    it('displays a totals table', function() {
+      var table = $('.meal-totals');
+      expect(table).to.exist;
     });
 
     xit('displays total calories in green if zero or positive number', function() {
@@ -63,7 +65,9 @@ describe('index', function() {
     xit('displays total calories in red if negative number', function() {
     });
 
-    xit('displays a table of created foods', function(){
+    it('displays a table of created foods', function(){
+      var table = $('#diary-food-items');
+      expect(table).to.exist;
     });
 
     xit('can search by food name', function(){
