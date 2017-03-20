@@ -1,3 +1,9 @@
+function getPage(page, onLoad) {
+  document.getElementById("foods-frame").src = "../index.html"
+
+  document.getElementById("foods-frame").onload = onLoad;
+}
+
 describe('Manage Foods', function() {
   var $;
 
@@ -6,9 +12,6 @@ describe('Manage Foods', function() {
   })
 
   beforeEach(function() {
-    $('#food-list tbody').html('');
-    $('#create-form input').val('');
-    $('.validation-error').html('');
     window.localStorage.clear();
   });
 
@@ -54,6 +57,26 @@ describe('Manage Foods', function() {
       var calorieContent = $(".food-calories").text();
       assert.equal(nameContent, "Banana");
       assert.equal(calorieContent, "35");
+    });
+
+    it('will persist foods across pages', function(done) {
+      $('#name-field input').val('Banana');
+      $('#calories-field input').val('35');
+      $('#add-food').click();
+
+      getPage("../index.html", function() {
+        $ = document.getElementById("foods-frame").contentWindow.$;
+        var foodRow = $("#diary-food-items .food-row").text();
+
+        assert.include(foodRow, "Banana");
+        assert.include(foodRow, "35");
+
+        done();
+      });
+      // document.getElementById("foods-frame").src = "../index.html"
+      //
+      // document.getElementById("foods-frame").onload = ;
+
     });
 
     it('can delete a food from the foods table', function() {

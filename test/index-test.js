@@ -7,7 +7,8 @@ describe('index', function() {
 
   beforeEach(function() {
     $('tr.meal-row').remove();
-    localStorage.setItem('foods','[{"name":"apple","calories":"50","visibility":"visible"},{"name":"banana","calories":"35","visibility":"visible"}]')
+    localStorage.clear();
+    localStorage.setItem('foods','[{"id":1,"name":"apple","calories":"50","visibility":"visible"},{"id":2,"name":"banana","calories":"35","visibility":"visible"}]')
   });
 
   context('functionality', function() {
@@ -22,14 +23,35 @@ describe('index', function() {
       expect(table).to.exist;
     });
 
-    it('can add a selected food to breakfast', function(){
+    it('can add a selected food to breakfast', function(done){
       var foodItem = $(".food-name:last").text();
       assert.equal(foodItem, "apple");
 
       $(".food-row.visible input:checkbox").prop("checked", true);
       $('#breakfast').click();
-      var mealItem = $('#breakfast-items .meal-row .food-name:first').text();
-      assert.equal(mealItem, "banana");
+
+      setTimeout(function(){
+        var mealItem = $('#breakfast-items .meal-row .food-name:first').text();
+        assert.equal(mealItem, "banana");
+        done();
+      }, 50);
+    });
+
+    it('persists meal contents across refreshes', function(done){
+      $(".food-row.visible input:checkbox").prop("checked", true);
+      $('#breakfast').click();
+
+      document.getElementById("index-frame").src = "../index.html"
+
+      document.getElementById("index-frame").onload = function() {
+        $ = document.getElementById("index-frame").contentWindow.$;
+
+        var mealItem = $('#breakfast-items .meal-row .food-name:first').text();
+        assert.equal(mealItem, "banana");
+
+        done();
+      };
+
     });
 
     it('can delete a food from breakfast', function() {
