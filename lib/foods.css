@@ -73,3 +73,32 @@ td.food-delete {
 .meal-buttons {
   width: 30%;
 }
+
+
+.chart {
+  margin-top: 25px;
+}
+
+.chart div {
+  font: 16px;
+  background-color: #eee;
+  text-align: right;
+  padding: 0;
+  margin: 1px;
+  color: white;
+  display: block;
+  height: 50px;
+}
+
+.chart div div {
+  background-color: rgba(62,170,175,0.5);
+}
+
+.chart div div:hover {
+  background-color: #DB4545;
+}
+
+.chart p {
+  color: #555;
+  text-align: left;
+}
